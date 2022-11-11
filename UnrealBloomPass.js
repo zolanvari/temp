@@ -33,7 +33,7 @@ var UnrealBloomPass = function ( resolution, strength, radius, threshold ) {
 	this.resolution = ( resolution !== undefined ) ? new Vector2( resolution.x, resolution.y ) : new Vector2( 256, 256 );
 
 	// create color only once here, reuse it later inside the render function
-	this.clearColor = new Color( 245, 66, 182 );
+	this.clearColor = new Color( 0, 0, 0 );
 
 	// render targets
 	var pars = { minFilter: LinearFilter, magFilter: LinearFilter, format: RGBAFormat };
